@@ -35,4 +35,15 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+    it("should return true if the word is present vertically", function() {
+      const result = wordSearch([
+        ['N', 'A', 'P'],
+        ['A', 'N', 'A'],
+        ['M', 'D', 'R'],
+        ['E', 'Y', 'K']
+      ],'ANDY')
+  
+      assert.isTrue(result);
+  });
 });
